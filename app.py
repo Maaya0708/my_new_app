@@ -36,7 +36,7 @@ if check1:
         result = num1 / num2
 
     st.write("Result: ", result)
-    streamlit run [app].py
+streamlit run app.py
 
 check2=st.checkbox("翻訳をして欲しい")
 
@@ -56,7 +56,7 @@ if check2:
         translator = Translator()
         result = translator.translate(text, dest=language)
         st.success(result.text)
-        streamlit run [app].py
+    streamlit run app.py
 
 
 
