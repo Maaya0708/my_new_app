@@ -36,11 +36,12 @@ if check1:
         result = num1 / num2
 
     st.write("Result: ", result)
-    streamlit run app.py
+    
 
 check2=st.checkbox("翻訳をして欲しい")
 
 if check2:
+    from googletrans import Translator
     st.set_page_config(page_title="翻訳アプリ", page_icon=":guardsman:", layout="wide")
     st.title("翻訳アプリ")
 
@@ -56,7 +57,7 @@ if check2:
         translator = Translator()
         result = translator.translate(text, dest=language)
         st.success(result.text)
-    streamlit run app.py
+
 
 
 
