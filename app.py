@@ -16,8 +16,7 @@ st.checkbox("簡単な計算をして欲しい")
 st.checkbox("翻訳をして欲しい")
 
 
-check1=st.checkbox("簡単な計算をして欲しい")
-if check1:
+if st.checkbox("簡単な計算をして欲しい"):
     st.title("簡単な計算")
     st.write("ここでは簡単な計算をします")
 
