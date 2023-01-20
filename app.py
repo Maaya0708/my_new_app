@@ -34,20 +34,4 @@ elif st.button("Divide"):
 
 st.write("Result: ", result)
     
-from googletrans import Translator
-st.set_page_config(page_title="翻訳アプリ", page_icon=":guardsman:", layout="wide")
-st.title("翻訳アプリ")
-
-   # 入力されたテキストを取得
-text = st.text_input("翻訳したいテキストを入力してください")
-
-   # 翻訳先の言語を選択
-languages = ["ja", "en", "fr", "es"]
-language = st.selectbox("翻訳先の言語を選択してください", languages)
-
-     # 翻訳ボタンを押した時の処理
-if st.button("翻訳"):
-    translator = Translator()
-    result = translator.translate(text, dest=language)
-    st.success(result.text)
     
